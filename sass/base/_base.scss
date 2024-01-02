@@ -5,7 +5,23 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
+
+  @include respon(tab-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respon(tab-por) {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  @include respon(phone) {
+    font-size: 30%; // 1rem = 4.8px
+  }
+
+  @include respon(big-desktop) {
+    font-size: 75%; // 1rem = 12px
+  }
 }
 
 body {

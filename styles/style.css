@@ -1,3 +1,22 @@
+/* 
+
+0-600px: Phone
+600-900px: Tablets portrait
+900-1200px: Tablet landscape
+1200-1800px: Laptop|Desktop
+1800px & +: Large Screen 
+ 
+breakpoints:
+
+- phone
+- tab-por
+- tab-land
+- big-desktop
+
+1em = 16px
+1rem =16px
+
+*/
 /* Colors */
 /* Animation part */
 @keyframes moveToRight {
@@ -34,7 +53,19 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 10px; }
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
