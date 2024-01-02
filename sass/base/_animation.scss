@@ -1,0 +1,45 @@
+/* Animation part */
+
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translate(-10.5rem, -3.2rem);
+  }
+
+  70% {
+    transform: translateX(2.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translate(10.5rem, 3.2rem);
+  }
+
+  70% {
+    transform: translateX(-2.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(6.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

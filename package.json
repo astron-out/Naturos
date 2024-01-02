@@ -1,0 +1,14 @@
+{
+  "name": "naturos",
+  "version": "1.0.0",
+  "description": "Landing page for Naturos",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/style.css -w"
+  },
+  "author": "Khudoyberdi Shamsiyev",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
