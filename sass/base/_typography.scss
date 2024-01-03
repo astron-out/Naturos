@@ -4,7 +4,6 @@ body {
   /* font-size: 1rem; */
   line-height: 1.7;
   color: $grey-color;
-  padding: 2rem;
 }
 
 .heading-primary {
@@ -20,6 +19,11 @@ body {
     /* Animation */
     animation-name: moveToRight;
     animation-duration: 2s;
+
+    @include respon(phone) {
+      font-size: 5rem;
+      letter-spacing: 1rem;
+    }
   }
 
   &--sub {
@@ -30,6 +34,10 @@ body {
     /* Animation */
     animation-name: moveToLeft;
     animation-duration: 2s;
+
+    @include respon(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -40,6 +48,14 @@ body {
   background-image: linear-gradient(to right, $light-green, $dark-green);
   -webkit-background-clip: text;
   color: transparent;
+
+  @include respon(tab-por) {
+    font-size: 3rem;
+  }
+
+  @include respon(phone) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-tertiary {

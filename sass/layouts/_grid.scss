@@ -4,6 +4,15 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respon(tab-por) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respon(tab-por) {
+    max-width: 50rem;
+    padding: 0 2rem;
   }
 
   @include clearfix;
@@ -13,6 +22,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respon(tab-por) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respon(tab-por) {
+      width: 100% !important;
     }
   }
 

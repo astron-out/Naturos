@@ -15,6 +15,11 @@
     box-shadow: 0 0 2rem $dark-grey-opacity;
     text-align: center;
     cursor: pointer;
+
+    @include respon(tab-por) {
+      top: 4rem;
+      right: 4rem;
+    }
   }
 
   &__background {
@@ -28,7 +33,10 @@
     z-index: 100;
     transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1);
 
-    // transform: scale(70);
+    @include respon(tab-por) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
   }
 
   &__nav {

@@ -3,6 +3,10 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  @include respon(tab-por) {
+    padding: 8rem 0;
+  }
+
   &__logo {
     display: block;
     width: 15rem;
@@ -42,6 +46,11 @@
     border-top: 1px solid $grey-color;
     padding-top: 2rem;
     display: inline-block;
+
+    @include respon(tab-por) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__copyright {
@@ -51,5 +60,10 @@
     padding-top: 2rem;
     width: 80%;
     float: right;
+
+    @include respon(tab-por) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
