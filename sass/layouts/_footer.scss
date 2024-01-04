@@ -7,6 +7,12 @@
     padding: 8rem 0;
   }
 
+  &__logo-box {
+    @include respon(tab-por) {
+      margin-bottom: 4rem !important;
+    }
+  }
+
   &__logo {
     display: block;
     width: 15rem;

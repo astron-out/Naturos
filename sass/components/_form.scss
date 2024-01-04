@@ -19,6 +19,10 @@
     transition: all 0.4s;
     backface-visibility: hidden;
 
+    @include respon(tab-por) {
+      width: 100%;
+    }
+
     &:focus {
       box-shadow: 0 0 1rem $dark-grey-opacity;
       border-bottom: 3px solid $light-green;
@@ -51,6 +55,11 @@
   &-radio-group {
     width: 49%;
     display: inline-block;
+
+    @include respon(tab-por) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &-radio-input {
@@ -73,6 +82,10 @@
     position: absolute;
     left: 0;
     top: -0.25rem;
+
+    @include respon(tab-por) {
+      border: 3px solid $light-green;
+    }
 
     &::after {
       content: "";

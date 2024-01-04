@@ -8,6 +8,15 @@
   font-size: $default-font-size;
   transform: skewX(-15deg);
 
+  @include respon(tab-por) {
+    width: 100%;
+    padding: 4rem;
+  }
+
+  @include respon(phone) {
+    transform: skew(0);
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
@@ -19,6 +28,10 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     position: relative;
+
+    @include respon(phone) {
+      transform: skew(0);
+    }
   }
 
   &__img {
@@ -30,6 +43,10 @@
 
   &__text {
     transform: skewX(15deg);
+
+    @include respon(phone) {
+      transform: skew(0);
+    }
   }
 
   &__caption {

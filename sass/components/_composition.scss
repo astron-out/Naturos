@@ -6,11 +6,22 @@
     border-radius: 0.2rem;
     position: absolute;
     transition: all 0.3s;
-    outline-offset: 1rem;
+    // outline-offset: 1rem;
+
+    @include respon(tab-por) {
+      float: left;
+      position: relative;
+      width: calc(100% / 3);
+      box-shadow: 0 2rem 1.5rem $dark-grey-opacity;
+    }
 
     &-p1 {
       left: 0;
       top: -2rem;
+
+      @include respon(tab-por) {
+        top: 0;
+      }
 
       &:hover {
         z-index: 2;
@@ -22,6 +33,12 @@
       right: 0;
       top: 2rem;
 
+      @include respon(tab-por) {
+        top: -3rem;
+        transform: scale(1.2);
+        z-index: 1;
+      }
+
       &:hover {
         z-index: 1;
         transform: scale(1.1);
@@ -32,13 +49,18 @@
       left: 20%;
       top: 10rem;
 
+      @include respon(tab-por) {
+        top: 0;
+        left: 0;
+      }
+
       &:hover {
         transform: scale(1.1);
       }
     }
 
     &:hover {
-      outline: 1rem solid $light-green;
+      // outline: 1rem solid $light-green;
       box-shadow: 0 2.5rem 5rem $dark-grey-opacity;
     }
   }
