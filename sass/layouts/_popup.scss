@@ -48,11 +48,23 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.2);
     transition: all 0.5s 0.2s;
+
+    @include respon(tab-por) {
+      display: block;
+    }
   }
 
   &:target &__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+
+    @include respon(tab-por) {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    @include respon(phone) {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
   }
 
   &__right {
@@ -60,17 +72,35 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respon(tab-por) {
+      width: 100%;
+      display: block;
+    }
+
+    @include respon(phone) {
+      padding: 1rem 3rem;
+    }
   }
 
   &__left {
     width: 33.3%;
     display: table-cell;
+
+    @include respon(tab-por) {
+      width: 100%;
+      display: flex;
+    }
   }
 
   &__img {
     width: 100%;
     display: block;
     overflow: hidden;
+
+    @include respon(tab-por) {
+      display: none;
+    }
   }
 
   &__text {
@@ -80,6 +110,15 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $light-grey-color;
+
+    @include respon(tab-por) {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    @include respon(phone) {
+      font-size: 1.4rem;
+    }
 
     -moz-hyphens: auto;
     -ms-hyphens: auto;
