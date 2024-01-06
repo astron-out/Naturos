@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-shadow: 0 0 2.5rem 0.2rem $dark-grey-opacity;
     border-radius: 0.5rem;
