@@ -126,3 +126,15 @@
     hyphens: auto;
   }
 }
+
+// JS class
+
+.popup-close-content {
+  transform: scale(0) !important;
+  transition: all 0.4s !important;
+}
+
+.popup-close-pop {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}

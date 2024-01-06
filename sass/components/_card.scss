@@ -164,7 +164,7 @@
     }
   }
 
-  @include respon(tab-por) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 0.5rem;
     background-color: $white-color;
@@ -208,8 +208,6 @@
       font-size: 2.8rem;
       font-weight: 300;
       text-align: right;
-      position: relative;
-      top: 0;
       right: 0;
       width: 100%;
     }
